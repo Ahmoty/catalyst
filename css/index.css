@@ -1,0 +1,102 @@
+*{
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: #00504E;
+    overflow-y: hidden;
+}
+/* Page settings */
+nav{
+    background-color: #003539;
+    position: sticky;
+    top:0;
+    align-content: center;
+}
+.logo-image{
+    margin-top: 5px;
+    margin-left: 5px;
+}
+.nav-links{
+    margin-top: 25px;
+    list-style-type: none;
+    float: right;
+    margin-left: 50px;
+    text-align: center;
+}
+li{
+    display: inline-block;
+}
+li a{
+    height: fit-content;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 30px;
+    margin-right: 15px;
+    padding: 10px;
+    font-family: "inter";
+    text-decoration: none;
+    color: white;
+}
+li a:active{
+    text-decoration: underline;
+}
+#active-tab{
+    background-color: white;
+    color: #003539;
+    border-radius: 3rem;
+}
+#no-acc{
+    border: white solid 3px;
+    border-radius: 2rem;
+}
+/* Nav bar style */
+
+/* Below is the style of the content */
+main{
+    display: flex;
+    align-content: center;
+}
+ 
+.intro-text{
+    color: white;
+    font-family: "inter";
+    margin-top: 50px;
+    font-size: 35px;
+    width: 50%;
+    bottom: 0;
+    margin-right: 5px;
+    margin-left: 15px;
+    display: inline-block;
+}
+.intro-image{
+    width: 590;
+    height: 90%;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+footer{
+    margin-top: 80px;
+    background-color: white;
+    width: fit-content;
+    margin-left: 100px;
+    text-align: center ;
+    border-radius: 3rem;
+}
+.products-link{
+    display: block;
+    text-decoration: none;
+    font-family: "inter";
+    font-size: 40px;
+    width: 300px;
+    color: #00504E;
+}
+footer a:hover{
+    background-color: #00504E;
+    color: white;
+    width: 300px;
+    border: white 3px solid;
+    border-radius: 2rem;
+}
