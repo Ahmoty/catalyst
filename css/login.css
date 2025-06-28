@@ -1,171 +1,130 @@
-* {
-    margin: 0;
-    padding: 0;
-    border: none;
+*{
+    margin: 0px;
+    padding:0px;
+    border: none;      
     box-sizing: border-box;
-  }
-  
-  body {
+}
+body{
     background-color: #00504E;
-    font-family: "inter", sans-serif;
-  }
-  
-  /* === Navbar === */
-  nav {
+}
+/* Page settings */
+nav{
     background-color: #003539;
     position: sticky;
-    top: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 10px 20px;
-  }
-  
-  .logo-image {
-    margin: 5px;
-    max-width: 100px;
-  }
-  
-  .nav-links {
+    top:0;
+    align-content: center;
+}
+.logo-image{
+    margin-top: 5px;
+    margin-left: 5px;
+}
+.nav-links{
+    margin-top: 25px;
     list-style-type: none;
-    display: flex;
-    gap: 10px;
-  }
-  
-  li {
+    float: right;
+    margin-left: 50px;
+    text-align: center;
+}
+li{
     display: inline-block;
-  }
-  
-  li a {
-    font-size: 20px;
-    padding: 10px 15px;
+}
+li a{
+    height: fit-content;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 30px;
+    margin-right: 15px;
+    padding: 10px;
+    font-family: "inter";
     text-decoration: none;
     color: white;
-  }
-  
-  li a:active {
+}
+li a:active{
     text-decoration: underline;
-  }
-  
-  #active-tab {
+}
+#active-tab{
     background-color: white;
     color: #003539;
     border-radius: 3rem;
-  }
-  
-  #no-acc {
-    border: white 3px solid;
+}
+#no-acc{
+    border: white solid 3px;
     border-radius: 2rem;
-  }
-  
-  /* === Form Container === */
-  form {
+}
+/* Nav bar style */
+
+/* below from style */
+form{
     background-color: white;
-    width: 90%;
-    max-width: 400px;
-    margin: 80px auto;
+    width: 22%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+    align-content: center;
     border-radius: 1rem;
-    padding: 30px 20px;
-  }
-  
-  .form-header {
+    height: 150%;
+}
+.form-header{
+    font-family: "inter";
     color: #00504E;
-    font-size: 32px;
+    font-size: 40px;
     text-align: center;
-    margin-bottom: 25px;
+    padding-bottom: 35px;
+    padding-top: 25px;
     letter-spacing: 1px;
-  }
-  
-  /* === Input Fields === */
-  .username,
-  .password {
-    font-size: 1rem;
-    color: #00504E;
-    width: 85%;
-    margin: 0 auto;
-    display: block;
+}
+.username,
+.password{
+    border: 0px;
+    margin-left: 15px;
+    font-size: 130%;
     outline: none;
-    margin-bottom: 10px;
-  }
-  
-  .input-lines {
+    color: #00504E;
+}
+.username,
+.password:focus{
+    border: none;
+    outline: none;
+}
+.email,.password{
+    padding-top: 25px;
+}
+.input-lines{
+    border-width: 3px;
     background-color: #00504E;
-    width: 85%;
-    height: 5px;
+    width:75%;
+    margin-left: 15px;
+    margin-top: 5px;
+    height: 5px;   
     border-radius: 2rem;
-    margin: 5px auto 20px;
-  }
-  
-  /* === Submit Button === */
-  .submite {
-    margin: 35px auto 0;
+}
+.submite{
+    margin-top: 35px;
     background-color: #00504E;
     color: white;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
     border-radius: 8rem;
     width: 60%;
-  }
-  
-  .send {
+}
+.send{ 
     display: block;
-    font-size: 20px;
+    border-radius:8rem ;
+    font-size: 25px;
+    margin-left: auto;
+    margin-right: auto;
     background-color: #00504E;
     color: white;
-    padding: 15px;
-    border-radius: 8rem;
-    text-align: center;
-  }
-  
-  /* === Sign In Link === */
-  .sign-in-link {
-    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.sign-in-link{
     margin-top: 20px;
     padding-bottom: 25px;
-  }
-  
-  .sign-in-link a {
+    text-align: center;
+}
+.sign-in-link a{
+    font-family: "inter";
     color: #00504E;
-    font-size: 1rem;
-  }
-  
-  /* === Responsive Media Queries === */
-  @media (max-width: 768px) {
-    li a {
-      font-size: 16px;
-      padding: 8px 10px;
-    }
-  
-    .form-header {
-      font-size: 26px;
-    }
-  
-    .username,
-    .password,
-    .input-lines {
-      width: 90%;
-    }
-  
-    .send {
-      font-size: 18px;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .form-header {
-      font-size: 22px;
-    }
-  
-    li a {
-      font-size: 14px;
-      padding: 6px 8px;
-    }
-  
-    .send {
-      font-size: 16px;
-    }
-  
-    .sign-in-link a {
-      font-size: 0.9rem;
-    }
-  }
-  
+}
