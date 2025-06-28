@@ -1,0 +1,198 @@
+@font-face {
+    font-family: Bold;
+    src: url(Font/Bold.ttf);
+}
+@font-face {
+    font-family: ExtraBold;
+    src: url(Font/ExtraBold.ttf);
+}
+@font-face {
+    font-family: Regular;
+    src: url(Font/Regular.ttf);
+}
+@font-face {
+    font-family: Thin;
+    src: url(Font/Regular.ttf);
+}
+
+*{
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: #00504E;
+    overflow-y: auto; /* Ensure vertical scrolling is enabled */
+}
+/* Scrollbar styles */
+html, body {
+    scrollbar-width: thin;
+    scrollbar-color: #003539 #00504E;
+}
+
+/* For Webkit browsers */
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+    width: 12px;
+    background: #00504E;
+}
+html::-webkit-scrollbar-thumb,
+body::-webkit-scrollbar-thumb {
+    background: #003539;
+    border-radius: 6px;
+    border: 2px solid #00504E;
+}
+html::-webkit-scrollbar-thumb:hover,
+body::-webkit-scrollbar-thumb:hover {
+    background: #00736b;
+}
+html::-webkit-scrollbar-corner,
+body::-webkit-scrollbar-corner {
+    background: #00504E;
+}
+
+/* Page settings */
+nav{
+    background-color: #003539;
+    position: sticky;
+    top:0;
+    align-content: center;
+    height: fit-content;
+    padding: 8px;
+}
+.logo-image{
+    margin-top: 5px;
+    margin-left: 5px;
+}
+.nav-links{
+    margin-top: 25px;
+    list-style-type: none;
+    float: right;
+    margin-left: 50px;
+    text-align: center;
+}
+li{
+    display: inline-block;
+}
+li a{
+    height: fit-content;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 30px;
+    margin-right: 15px;
+    padding: 10px;
+    font-family: Regular;
+    text-decoration: none;
+    color: white;
+}
+li a:active{
+    text-decoration: underline;
+}
+#active-tab{
+    background-color: white;
+    color: #003539;
+    border-radius: 3rem;
+}
+#no-acc{
+    border: white solid 3px;
+    border-radius: 3rem;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+#no-acc:hover{
+    background-color: white;
+    color: #003539;
+    border-radius: 3rem;
+}
+/* Nav bar style */
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start; /* or center if you want vertical centering */
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 2rem; /* space between cards */
+}
+h1{
+    margin-top: 25px;
+    font-family: Bold;
+    color: white;
+    text-align: center;
+}
+.product-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Changed from center */
+    margin-top: 30px;
+    margin-left: 3%;
+    background-color: #003539;
+    width: 20%;
+    height: 370px;
+    border-radius: 1rem;
+    padding-bottom: 15px;
+}
+#learnify-logo{
+    display: block;
+    width: 70%;
+    height: auto;
+    padding-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.soft-info{
+    margin-left: 15px;
+    margin-top: 25px;
+}
+.name{
+    text-align: center;
+    color: white;
+    font-family: Regular;
+    font-size: 35px;
+}
+.price,
+.type{
+    margin-top: 20px;
+    text-align: left;
+    color: white;
+    font-family: Regular;
+    font-size: 15px;
+}
+.link{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;   /* This pushes the button to the bottom */
+    font-family: Regular;
+    font-size: 25px;
+    text-align: center;
+    background-color: white;
+    border-radius: 25px;
+    width: 50%;
+}
+
+.link a{
+    text-decoration: none;
+    color: #003539;
+}
+.card-press{
+    width: fit-content;
+    height: fit-content;
+}
+
+#board-logo{
+    display: block;
+    width:33%;
+    height: auto;
+    padding-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.end-products{
+    margin-top: 50px;
+    padding-bottom: 30px;
+    text-align: center;
+    color: white;
+    font-family: Regular;
+    font-size: 150%;
+}
